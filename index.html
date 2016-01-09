@@ -28,7 +28,7 @@
 <body>
     <div class="container">
 
-        <p>Drag this bookmarklet <a href='javascript:(void function(){var styleEl=document.querySelector("style#dim-fb");if(styleEl===null){var s=document.createElement("style");s.setAttribute("id","dim-fb");s.innerText="#pagelet_bluebar,#pagelet_sidebar,#rightCol,#leftCol{opacity:0.2;}";document.body.appendChild(s);}else{styleEl.remove();}}());'>DimFB</a> into your Bookmarks bar. Visit Facebook. Click. Enjoy.</p>
+        <p>Drag this bookmarklet <a href='javascript:(void function(){var styleEl=document.querySelector("style#dim-fb");if(styleEl===null){var rules="#pagelet_bluebar,#pagelet_sidebar,#rightCol,#leftCol{opacity:0.2;}";var s=document.createElement("style");s.type='text/css';s.setAttribute("id","dim-fb");if(s.styleSheet){s.styleSheet.cssText=rules;}else{s.appendChild(document.createTextNode(rules));}var head=document.head||document.getElementsByTagName('head')[0];head.appendChild(s);}else{styleEl.remove();}}());'>DimFB</a> into your Bookmarks bar. Visit Facebook. Click. Enjoy.</p>
         <p>Click again to remove the dimming effect.</p>
         <br/>
         <p class="note">I've created this bookmarklet, because I find it very distracting to check Facebook posts while a ton of other elements are floating around in my screen.</p>
