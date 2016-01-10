@@ -1,6 +1,6 @@
 (function(){
 
-    var styleEl = document.querySelector("style#dim-fb")
+    var styleEl = document.querySelector("style#dim-fb");
     if ( styleEl === null ){
         var rules = "#pagelet_bluebar,#pagelet_sidebar,#rightCol,#leftCol{opacity:0.2;}";
         var s=document.createElement("style");
